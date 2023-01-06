@@ -1,0 +1,353 @@
+/* font-family: 'Barlow Condensed', sans-serif; */
+*{
+
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+*{
+    scrollbar-width: thin;
+    scrollbar-color: #999 rgba(11, 11, 11, 0.824);
+}
+
+*::-webkit-scrollbar{
+    -webkit-appearance: none;
+}
+  
+*::-webkit-scrollbar{
+    width: 12px;
+}
+  
+*::-webkit-scrollbar-track{
+    background-color: rgba(11, 11, 11, 0.824);
+}
+  
+*::-webkit-scrollbar-thumb{
+    background-color:#999;
+    border-radius: 20px;
+    border: 1px solid #101010;
+}
+
+ 
+
+.header__container{
+    z-index: 11;
+    position: sticky;
+    left: 0;
+    top: 0;
+    padding: 20px 40px;
+
+}
+
+.header__container_items{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    background-color: #222;
+    border-radius: 30px;
+    border: 1px solid white;
+
+
+}
+
+.items__architects{
+    margin-left:30px;
+    font-size: 1.5rem;
+    color: white;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: bold;
+
+}
+
+.items__navigator{
+    list-style: none;
+    margin-left: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.items__navigator li a{
+    padding: 25px;
+    /* margin-left: 36px ; */
+    text-decoration: none;
+    color: white;
+    font-size: 1.3rem;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+.items__navigator li a:hover{
+    background-color: white;
+    color: #111;
+    transition-duration: .3s;
+}
+
+.container__main_architects{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.architects_principal_logo img{
+    width: 550px;
+    height: 350px;
+    filter: drop-shadow(2px 2px 1px #111);
+}
+.principal__text_items{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 10px;
+
+}
+.principal__text_items p {
+    width: 630px;
+    text-align: center;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 1.4rem;
+}
+
+.principal__text_items span{
+    margin-top: 20px;
+}
+
+.principal__text_items span a{
+    display: inline-block;
+    border: 1px solid #111;
+    padding:  10px 25px;
+    border-radius: 20px;
+    background-color: #111;
+    font-size: 1.5rem;
+    color: black;
+    font-family: 'Barlow Condensed', sans-serif;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+.principal__text_items span a:hover{
+    background-color: #fff;
+    color: #111;
+
+    transition-duration: .3s;
+}
+
+.container_historia{
+    margin-top: 70px;
+    background-color: #111;
+}
+.title__architects_historia, .title__architects_discografia, .title__architects_songs{
+    padding-top: 60px ;
+    text-align: center;
+    font-size: 3rem ;
+    color: white;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+.container_historia_main{
+    width: 100%;
+    position: relative;
+    display: flex;
+    margin-top: 60px;
+    padding-bottom: 60px;
+}
+.architects-band img{
+    z-index: 10;
+    position: absolute;
+    left: 630px;
+    width: 650px;
+    height: 400px;
+    overflow: hidden;
+}
+.texto__historia{
+    position: relative;
+    margin-top: 30px;
+    margin-left: 60px;
+    width: 600px;
+    padding: 70px 50px 90px 20px;
+    background-color: white;
+    font-size: 1.5rem;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+.container__discografia{
+    margin-top: 40px;
+}
+.container___dis_items{
+    margin-top: 30px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 20px;
+    row-gap: 20px;
+    flex-wrap: wrap;
+
+}
+.disco{
+    width: 300px;
+    height: 300px;
+    position: relative;
+}
+
+
+.disco img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.mostrar_texto{
+    width: 0%;
+    height: 300px;
+    background-color: rgba(255, 255, 255, 0.521);
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+    visibility: hidden;
+}
+
+.disco:hover .mostrar_texto{
+    width: 100%;
+    color: #111;
+    font-size: 1.3rem ;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    visibility: visible;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+.container__best_songs{
+    width: 100%;
+    background-color: #111;
+
+   
+}
+.container__songs_election{
+    width: 80%;
+    margin-left: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap:50px;
+    padding-top: 400px;
+    height: 600px;
+    overflow-y: scroll;
+
+}
+.song-title{
+    text-align: center;
+    color: #fff;
+    width: 300px;
+    font-size: 2.5rem;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+
+.song-album{
+    color: #fff;
+    width: 300px;
+    font-size: 2rem;
+    font-family: 'Barlow Condensed', sans-serif;
+
+}
+
+.songs{
+    width: 85%;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+.songs audio{
+    border: 2px solid white;
+    width: 400px;
+    border-radius: 30px;
+}
+
+
+.songs:hover {
+    background-color: white;
+
+}
+
+.songs:hover .song-title{
+    color: #111;
+
+}
+
+.songs:hover .song-album{
+    color: #111;
+
+}
+
+.songs:hover audio{
+    border: 2px solid #111;
+}
+
+.banner-end-architects{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+    padding-bottom: 30px;
+    width: 100%;
+    row-gap:30px;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+
+}
+
+
+.banner-end-architects hr{
+    width: 800px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
