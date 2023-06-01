@@ -11,10 +11,15 @@
     <link rel="stylesheet" href="./CSS/media_phones.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap" rel="stylesheet"> 
- 
+    <link rel="stylesheet" href="./CSS/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
     <title>Architects</title>
 </head>
 <body>
+
+    <span id="Inicio"></span>
 
     <header class="header__container">
 
@@ -27,20 +32,26 @@
             <ul class="items__navigator">
 
                 <li>
-                    <a href="#">Inicio</a>
+                    <a href="#Inicio">Inicio</a>
                 </li>
 
                 <li>
-                    <a href="#">Historia</a>
+                    <a href="#Historia">Historia</a>
                 
                 </li>
 
                 <li>
-                    <a href="#">Discos</a>
+                    <a href="#Discos">Discos</a>
                 </li>
 
 
             </ul>
+
+            <div class="container_ham">
+
+                <i id="btn_responsive" class="fa-solid fa-bars fa-2xl"></i>
+
+            </div>
 
         </nav>
 
@@ -70,9 +81,9 @@
 
     </section>
 
-    <section class="container_historia">
+    <section class="container_historia" id="Historia">
 
-        <div class="title__architects_historia">
+        <div class="title__architects_historia" >
 
             <h1>Historia</h1>
 
@@ -99,7 +110,7 @@
 
     </section>
 
-    <section class="container__discografia">
+    <section class="container__discografia" id="Discos">
 
         <div class="title__architects_discografia">
 
@@ -291,6 +302,6 @@
 
     </section>
 
-    
+    <script src="./index.js"></script>
 </body>
 </html>
