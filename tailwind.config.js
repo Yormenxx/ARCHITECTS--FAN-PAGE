@@ -5,7 +5,13 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'architectsHero': "url('../src/assets/images/bannerGroup.webp')",
+        'bannerBg':"url('../src/assets/images/bannerAlbum.webp')"
+  
+      }
+    },
   },
   plugins: [],
 }

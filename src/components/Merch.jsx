@@ -3,7 +3,7 @@ import Carousel from "./Carousel"
 
 const Merch = () => {
   return (
-    <section>
+    <section className="bg-neutral-950 text-white">
 
     <Carousel/>
 

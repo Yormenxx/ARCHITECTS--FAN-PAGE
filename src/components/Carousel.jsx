@@ -3,13 +3,40 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 const Carousel = () => {
+
+  function SampleNextArrow(props) {
+    const { className, style, onClick } = props;
+    return (
+      <div
+        className={className}
+        style={{ ...style, display: "block", background: "black", color:"white", borderRadius:"100%" }}
+        onClick={onClick}
+      />
+    );
+  }
+  
+  function SamplePrevArrow(props) {
+    const { className, style, onClick } = props;
+    return (
+      <div
+        className={className}
+        style={{ ...style, display: "block", background: "black", color:"white", borderRadius:"100%" }}
+        onClick={onClick}
+      />
+    );
+  }
   const settings = {
-    dots: true,
+    dots: false,
     infinite: false,
-    speed: 500,
     slidesToShow: 3,
-    slidesToScroll: 3,
+    slidesToScroll: 1,
+    nextArrow: <SampleNextArrow />,
+    prevArrow: <SamplePrevArrow />,
     initialSlide: 0,
+    autoplay: true,
+    speed: 2000,
+    autoplaySpeed: 2000,
+    cssEase: "linear",
     responsive: [
       {
         breakpoint: 1024,
@@ -40,24 +67,50 @@ const Carousel = () => {
 
   return (
 
-    <section className="bg-neutral-900 text-white py-10">
+    <section className="  py-10">
          <div>
-            <h2 className="text-center font-bold text-6xl capitalize py-10 underline">Merch</h2>
+            <h2 className="text-center font-bold text-6xl capitalize py-10 underline">Mercancia</h2>
         </div>
 
-    <div className="w-[80%] mx-auto">
+    <div className="w-[90%] mx-auto">
       <Slider {...settings}>
 
       {
         MERCH.map((item, key)=>(
           <div key={key} className="p-2 flex flex-col items-center justify-center " >
 
-            <div className="bg-neutral-600 rounded-2xl">
-              <img src={item.image} className="w-[200px] mx-auto h-[200px] " alt="" />
+            <div >
+              <img src={item.image} className="w-[300px] mx-auto h-[300px] " alt="" />
+            </div>
+            <div className="text-center">
+              <h3 className="capitalize text-2xl font-semibold">{item.title}</h3>
+              <span className="font-bold">{item.year}</span>
+            </div>
+
+          </div>
+        ))
+      }
+
+      </Slider>
+  
+
+    </div>
+
+  
+
+    <div className="w-[90%] mx-auto">
+      <Slider {...settings}>
+
+      {
+        MERCH.map((item, key)=>(
+          <div key={key} className="p-2 flex flex-col items-center justify-center " >
+
+            <div >
+              <img src={item.image} className="w-[300px] mx-auto h-[300px] " alt="" />
             </div>
             <div className="text-center">
               <h3 className="capitalize text-xl font-semibold">{item.title}</h3>
-              <span className="text-neutral-50 font-bold">{item.year}</span>
+              <span className=" font-bold">{item.year}</span>
             </div>
 
           </div>
@@ -74,6 +127,8 @@ const Carousel = () => {
     </div>
 
     </section>
+
+    
 
 
  

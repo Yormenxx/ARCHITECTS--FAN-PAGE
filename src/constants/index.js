@@ -34,7 +34,7 @@ export const LINK = [
     },
 
     {
-        name: "galllery",
+        name: "gallery",
         link:"#gallery"
     },
 
@@ -55,35 +55,41 @@ export const DISC = [
     {
         image:`${img1}`,
         title:"For Those That Wish to Exist",
-        year:"2021"
+        year:"2021",
+        reproducir:"/forthose"
     },
 
     {
         image:`${img2}`,
         title:"Holy Hell",
-        year:"2018"
+        year:"2018",
+           reproducir:"/holy"
     },
     {
         image:`${img3}`,
         title:"All Our Gods Have Abandoned Us",
-        year:"2016"
+        year:"2016",
+           reproducir:"/augh"
     },
  
     {
         image:`${img4}`,
         title:"Lost Forever // Lost Together",
-        year:"2014"
+        year:"2014",
+           reproducir:"/lastfor"
     },
     
     {
         image:`${img5}`,
         title:"Hollow Crown",
-        year:"2009"
+        year:"2009",
+           reproducir:"/crown"
     },
     {
         image:`${img6}`,
         title:"Ruin",
-        year:"2007"
+        year:"2007",
+           reproducir:"/ruin"
     },
 ]
 
@@ -95,6 +101,7 @@ export const MERCH = [
         image:`${arch1}`,
         title : "Logo necklace",
         year:"$15.0 USD"
+
     },
     {
         image:`${arch2}`,
