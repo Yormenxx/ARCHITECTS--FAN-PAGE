@@ -16,6 +16,7 @@ import arch7 from '../assets/images/merch/Architects7.png'
 import arch8 from '../assets/images/merch/Architects8.png'
 import arch9 from '../assets/images/merch/Architects9.png'
 
+import song1 from '../assets/songs/holy.mp3'
 
 
 export const LINK = [
@@ -24,7 +25,7 @@ export const LINK = [
         link:"#home"
     },
     {
-        name: "song",
+        name: "songs",
         link:"#song"
     },
 
@@ -33,14 +34,11 @@ export const LINK = [
         link:"#disc"
     },
 
-    {
-        name: "gallery",
-        link:"#gallery"
-    },
+ 
 
     {
-        name: "live",
-        link:"#live"
+        name: "merch",
+        link:"#merch"
     },
 
     {
@@ -63,7 +61,7 @@ export const DISC = [
         image:`${img2}`,
         title:"Holy Hell",
         year:"2018",
-           reproducir:"/holy"
+        reproducir:"/holy"
     },
     {
         image:`${img3}`,
@@ -97,12 +95,7 @@ export const DISC = [
 
 
 export const MERCH = [
-    {
-        image:`${arch1}`,
-        title : "Logo necklace",
-        year:"$15.0 USD"
-
-    },
+  
     {
         image:`${arch2}`,
         title : "Are You Happy Now? (Black) L/S",
@@ -146,4 +139,37 @@ export const MERCH = [
 ]
 
 
+export const SONGS = [
+    {
+        image : `${img1}`,
+        song :"Giving blood",
+        band:"Architects",
+        album:"for those to wish to exists",
+        pathSong:`${song1}`
 
+    },
+    {
+        image : `${img2}`,
+        song :"A wasted hymn",
+        band:"Architects",
+        album:"Holy hell"
+    },
+    {
+        image : `${img2}`,
+        song :"Royal beggars",
+        band:"Architects",
+        album:"Holy hell"
+    },
+    {
+        image : `${img3}`,
+        song :"Mmemento mori",
+        band:"Architects",
+        album:"All our gods have abadoned us"
+    },
+    {
+        image : `${img1}`,
+        song :"Dead butterflies",
+        band:"Architects",
+        album:"for those to wish to exists"
+    }
+]

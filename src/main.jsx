@@ -23,6 +23,8 @@ createRoot(document.getElementById('root')).render(
         <Route path='/lastfor' element={<Lastfor/>}/>
         <Route path='/crown' element={<Crown/>}/>
         <Route path='/ruin' element={<Ruin/>}/>
+
+      
     </Routes>
   
   </BrowserRouter>

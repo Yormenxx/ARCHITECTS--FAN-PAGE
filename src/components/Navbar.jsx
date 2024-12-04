@@ -1,9 +1,15 @@
-import {useState} from "react"
+import {useState,useEffect} from "react"
 import logo from "../assets/images/logo.jfif"
 import { LINK } from "../constants"
 import {X , Menu} from 'lucide-react'
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 const Navbar = () => {
+
+    useEffect(()=>{
+        AOS.init({duration:1000})
+    })
+
 
 
     const [toggle, setToggle] = useState(false);
@@ -14,10 +20,10 @@ const Navbar = () => {
   return (
     <>
     
-    <header>
-        <nav className="w-full px-2 py-3 ">
+    <header id="home">
+        <nav className="w-full px-2 py-3 " data-aos="fade-up">
 
-            <div className="flex justify-between items-center px-7">
+            <div className="flex justify-evenly items-center px-7">
 
                     
                 <div>
@@ -31,7 +37,7 @@ const Navbar = () => {
                         {
                             LINK.map((link,key)=>(
                                 <li  key={key}>
-                                    <a href={link.link} className="text-lg capitalize font-semibold">{link.name}</a>
+                                    <a href={link.link} className="text-lg capitalize font-semibold hover:opacity-80 duration-150 ease-in-out">{link.name}</a>
                                 </li>
                             ))
                         }

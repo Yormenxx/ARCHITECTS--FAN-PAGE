@@ -1,7 +1,7 @@
 
 const Action = () => {
   return (
-    <section className="flex items-center justify-center bg-neutral-950">
+    <section className="flex items-center justify-center ">
 
         <div className="relative w-full h-full bg-cover flex items-center justify-center  bg-center p-8 my-8 dui-bg-fixed bg-architectsHero">
 
