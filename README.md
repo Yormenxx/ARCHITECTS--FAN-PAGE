@@ -1,8 +1,12 @@
-# React + Vite
+[![architect.png](https://i.postimg.cc/vT3RXkKx/architect.png)](https://postimg.cc/xNJF1xn9)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Architecs fan landing
 
-Currently, two official plugins are available:
+## Tecnologías utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+* React
+* Tailwind
+* vite
+* react router
+
+ Mi proyecto es una página web dedicada a la banda británica Architects, donde los fans pueden explorar su historia, discografía y merch.
